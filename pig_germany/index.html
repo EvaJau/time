@@ -1,0 +1,49 @@
+<!DOCTYPE html style="overflow-y: scroll;">
+<html>
+<head>
+	<title>pigs</title>
+</head>
+<body>
+	<div style="border: solid 2px purple; margin: 2px; padding: 2px; border-radius: 10px; background-color: pink; font-family: serif;">
+		
+		In 2019, 55.1 million pigs were slaughtered in germany. <br>
+		This would translate to 1.7 pigs every second and is illustrated by this page. <br>
+
+		Source <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2020/02/PD20_036_413.html" target="_blank">destatis</a> <br>
+
+		Inspired by <a href="https://codeforhamburg.gitlab.io/corooooooona/">code for hamburg</a> and <a href="http://www.janavirgin.com/CO2/DEFOOOOOOOOOOOOOOOOOOOOOREST.html">Joana Moll</a> <br>
+
+		Modified emoji from <a href="https://openmoji.org/">OpenMoji</a>
+
+	</div>
+
+	<div id="pigs">
+
+	<script type="text/javascript">
+
+		const seconds_per_year = 365 * 24 * 60 * 60;
+
+		var pigs = 55100000;
+
+		time_between = seconds_per_year / pigs;
+
+		var pigs = document.getElementById("pigs");
+
+		var pig_img
+
+		setInterval(function() {
+
+			pig_img = document.createElement('img')
+
+			pig_img.setAttribute("src", "img/pig.png");
+			pigs.appendChild(pig_img);
+
+
+
+		}, time_between * 1000)
+
+	</script>	
+	</div>
+
+</body>
+</html>
